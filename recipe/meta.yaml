@@ -1,5 +1,5 @@
 {% set name = "dantro" %}
-{% set version = "0.14.1" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 64704e098dee39f668c7b7d35d32b6db86aa44a15c31d45f99fea1021a5a0b31
+  sha256: 40d05141ec308c797a62ca71db60d8f3ffeaa8cd4bf760afb77b158735a269c8
 
 build:
   number: 0
