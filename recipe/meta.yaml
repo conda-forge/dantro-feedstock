@@ -28,7 +28,7 @@ requirements:
     - numpy >=1.17.4
     - paramspace >=2.5.1
     - ruamel.yaml >=0.16.10
-    - scipy >=1.5.4
+    - scipy >=1.5.3
     - sympy >=1.5.1
     - toolz >=0.10.0
     - xarray >=0.15.1
