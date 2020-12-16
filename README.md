@@ -5,9 +5,13 @@ Home: https://ts-gitlab.iup.uni-heidelberg.de/utopia/dantro
 
 Package license: LGPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dantro-feedstock/blob/master/LICENSE.txt)
 
 Summary: Handle, transform, and visualize hierarchically structured data
+
+Development: https://ts-gitlab.iup.uni-heidelberg.de/utopia/dantro
+
+Documentation: https://dantro.readthedocs.io
 
 dantro is a python package for handling, transforming, and visualizing
 hierarchically organized data.
