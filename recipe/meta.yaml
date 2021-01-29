@@ -26,12 +26,12 @@ requirements:
     - matplotlib-base >=3.2.1
     - networkx >=2.2
     - numpy >=1.19.4
-    - paramspace >=2.5.5
     - ruamel.yaml >=0.16.10
     - scipy >=1.5.3
     - sympy >=1.5.1
     - toolz >=0.10.0
     - xarray >=0.16.0
+    - paramspace >=2.5.5
     - dill
     - seaborn
 
