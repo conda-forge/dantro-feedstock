@@ -1,5 +1,5 @@
 {% set name = "dantro" %}
-{% set version = "0.15.2" %}
+{% set version = "0.15.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7c20c403fe7b58cb917458ed12a18eca32847aa21eea32baa239cec70024d218
+  sha256: 9f4c280c7ee8f09f0fd07a67bddd8245d68734e46ee5a9e3b48d0c864c99c85a
 
 build:
   number: 0
@@ -26,12 +26,12 @@ requirements:
     - matplotlib-base >=3.2.1
     - networkx >=2.2
     - numpy >=1.19.4
-    - paramspace >=2.5.1
     - ruamel.yaml >=0.16.10
     - scipy >=1.5.3
     - sympy >=1.5.1
     - toolz >=0.10.0
     - xarray >=0.16.0
+    - paramspace >=2.5.5
     - dill
     - seaborn
 
