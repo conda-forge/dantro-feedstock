@@ -1,5 +1,5 @@
 {% set name = "dantro" %}
-{% set version = "0.17.2" %}
+{% set version = "0.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 64ec64a2a93611928b9a92f36303bb46d646bdacd825a303f0ca0b5d115aea89
+  sha256: bce1d7331ac65ffe7171f1ec8aaea59212a635cc7c64ce56f965cc849fd71e15
 
 build:
   number: 0
@@ -16,22 +16,23 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
-    - dask >=2.10.1
-    - distributed >=2.10.0
-    - h5py >=3.1.0
-    - matplotlib-base >=3.2.1
-    - networkx >=2.2
-    - numpy >=1.19.4
-    - ruamel.yaml >=0.16.10
-    - scipy >=1.5.3
-    - sympy >=1.5.1
-    - toolz >=0.10.0
-    - xarray >=0.16.0
-    - paramspace >=2.5.5
+    - python >=3.7
+    - dask
+    - distributed
+    - h5py
+    - h5netcdf
+    - matplotlib-base
+    - networkx
+    - numpy
+    - ruamel.yaml
+    - scipy
+    - sympy
+    - toolz
+    - xarray
+    - paramspace
     - dill
     - seaborn
 
@@ -40,10 +41,11 @@ test:
     - dantro
     - dantro.containers
     - dantro.data_loaders
+    - dantro.data_ops
     - dantro.groups
     - dantro.mixins
-    - dantro.plot_creators
-    - dantro.plot_creators.ext_funcs
+    - dantro.plot.creators
+    - dantro.plot.funcs
     - dantro.proxy
     - dantro.utils
   requires:
@@ -53,7 +55,7 @@ test:
 
 
 about:
-  home: https://ts-gitlab.iup.uni-heidelberg.de/utopia/dantro
+  home: https://gitlab.com/utopia-project/dantro
   license: LGPL-3.0-or-later
   license_family: LGPL
   license_file: COPYING.LESSER
@@ -64,7 +66,7 @@ about:
     Integrated into data-intensive projects, it supplies an easy way to define
     a customizable, configuration-based data processing pipeline.
   doc_url: https://dantro.readthedocs.io
-  dev_url: https://ts-gitlab.iup.uni-heidelberg.de/utopia/dantro
+  dev_url: https://gitlab.com/utopia-project/dantro
 
 extra:
   recipe-maintainers:
