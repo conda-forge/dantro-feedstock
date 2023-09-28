@@ -33,6 +33,7 @@ requirements:
     - toolz
     - xarray
     - paramspace
+    - yayaml
     - dill
     - seaborn
 
