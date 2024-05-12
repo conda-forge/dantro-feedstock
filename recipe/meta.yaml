@@ -1,5 +1,5 @@
 {% set name = "dantro" %}
-{% set version = "0.19.1" %}
+{% set version = "0.19.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d93e4465dee55bbd9a92103abafa9934ad591b701c2444d5e8782e456f05be34
+  sha256: 682b1f37f2fe928804d2508543e012705b6e6e35fd25a57d34d92131f080b269
 
 build:
   number: 0
@@ -33,6 +33,7 @@ requirements:
     - toolz
     - xarray
     - paramspace
+    - yayaml
     - dill
     - seaborn
 
